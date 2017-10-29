@@ -5,6 +5,8 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "chart.js": "^2.7.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
     "openlayers": "^4.4.2",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
@@ -12,7 +14,9 @@
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
     "react-scripts": "1.0.14",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "redux-thunk": "^1.0.0",
+    "world-flags-sprite": "0.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

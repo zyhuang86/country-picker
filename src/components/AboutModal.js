@@ -1,0 +1,35 @@
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { Modal } from 'react-bootstrap'
+import '../../node_modules/bootstrap/dist/css/bootstrap.css'
+
+class AboutModal extends Component {
+
+  static propTypes = {
+    show: PropTypes.bool.isRequired,
+    onHide: PropTypes.func.isRequired
+  };
+
+  render() {
+    return (
+        <Modal show={this.props.show} onHide={this.props.onHide} aria-labelledby="contained-modal-title-sm">
+          <Modal.Header closeButton>
+            <Modal.Title>About&nbsp;<i className="fa fa-info" /></Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <p>
+            This is a simple application built using React and OpenLayers. When a location is clicked on the map,
+            a popup will show up to display the country that was selected if found. From the popup, you can bring
+            up additional information (flag, wiki, coordinates) on the country by clicking on the country name in the popup.
+            From the control panel, you can also toggle country boundaries and be able to mouse over them.
+            <br/><br/>
+            Note: This application is calling http://ws.geonames.org/ to get country names from coordinates using their demo
+            account. There is a daily limit associated with the web service based on IP.
+            </p>
+          </Modal.Body>
+        </Modal>
+    )
+  }
+}
+
+export default AboutModal;
