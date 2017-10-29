@@ -4,7 +4,7 @@ const initialState = {
   countryDataRetrievalFailed: false,
   isCountryBoundaryVisible: false,
   selectedCoordinates: [0,0],
-  selectedCountryData: {"languages":"ar-OM,en,bal,ur","distance":"0","countryCode":"OM","countryName":"Oman"}
+  selectedCountryData: {}
 };
 
 const popoutPanel = (state = initialState, action) => {
