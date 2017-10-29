@@ -11,7 +11,7 @@ account. There is a daily limit associated with the web service based on IP.
 
 Screenshot
 ====
-![Application Screenshot](/assets/img/country-picker-screenshot.png?raw=true "Application Screenshot")
+![Application Screenshot](/src/assets/img/country-picker-screenshot.png?raw=true "Application Screenshot")
 
 
 Build & Deployment
