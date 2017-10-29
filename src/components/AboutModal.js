@@ -21,7 +21,8 @@ class AboutModal extends Component {
             This is a simple application built using React and OpenLayers. When a location is clicked on the map,
             a popup will show up to display the country that was selected if found. From the popup, you can bring
             up additional information (flag, wiki, coordinates) on the country by clicking on the country name in the popup.
-            From the control panel, you can also toggle country boundaries and be able to mouse over them.
+            From the control panel, you can also toggle country boundaries. If the boundaries are visible, you will be able
+            to highlight a country on mouse over.
             <br/><br/>
             Note: This application is calling http://ws.geonames.org/ to get country names from coordinates using their demo
             account. There is a daily limit associated with the web service based on IP.

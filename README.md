@@ -4,7 +4,7 @@ Country Picker
 This is a simple application built using React and OpenLayers. When a location is clicked on the map,
 a popup will show up to display the country that was selected if found. From the popup, you can bring
 up additional information (flag, wiki, coordinates) on the country by clicking on the country name in the popup.
-From the control panel, you can also toggle country boundaries. If the boundaries are visible, you wii be able 
+From the control panel, you can also toggle country boundaries. If the boundaries are visible, you will be able 
 to highlight a country on mouse over.
 
 Note: This application is calling http://ws.geonames.org/ to get country names from coordinates using their demo
