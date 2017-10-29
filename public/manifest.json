@@ -1,6 +1,6 @@
 {
-  "short_name": "HeatMap",
-  "name": "HeatMap",
+  "short_name": "CountryPicker",
+  "name": "CountryPicker",
   "icons": [
     {
       "src": "favicon.ico",
