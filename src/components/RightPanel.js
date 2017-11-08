@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Modal, Label } from 'react-bootstrap'
-import '../../node_modules/world-flags-sprite/stylesheets/flags32.css'
-import '../../node_modules/bootstrap/dist/css/bootstrap.css'
-import '../styles/App.css'
 
 const WIKI_URL_ROOT = "https://en.m.wikipedia.org/wiki/";
 class RightPanel extends Component {

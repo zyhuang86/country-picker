@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Modal } from 'react-bootstrap'
-import '../../node_modules/bootstrap/dist/css/bootstrap.css'
 
 class AboutModal extends Component {
 

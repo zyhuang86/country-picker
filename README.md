@@ -28,6 +28,9 @@ For installation and local deployment, run the following commands
     
 Navigate to http://localhost:3000
 
+To run unit tests
+
+    npm test
 
 For production, run the following commands
 

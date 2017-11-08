@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
-import '../../node_modules/bootstrap/dist/css/bootstrap.css'
-import '../../node_modules/font-awesome/css/font-awesome.min.css'
 
 export default class TopMenuBar extends Component {
 

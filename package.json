@@ -13,18 +13,30 @@
     "react-chartjs-2": "^2.6.4",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
-    "react-scripts": "1.0.14",
     "redux": "^3.7.2",
     "redux-thunk": "^1.0.0",
     "world-flags-sprite": "0.0.2"
   },
+  "devDependencies": {
+    "enzyme": "^3.1.1",
+    "enzyme-adapter-react-16": "^1.0.4",
+    "enzyme-to-json": "^3.2.1",
+    "react-addons-test-utils": "^15.6.2",
+    "react-scripts": "1.0.17",
+    "react-test-renderer": "^16.0.0",
+    "redux-devtools": "^3.4.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "redux-devtools": "^3.4.0"
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/__test__/*",
+      "!src/index.js"
+    ]
   }
 }

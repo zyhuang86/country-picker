@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ol from 'openlayers'
 import { MapConfig } from '../configurations/mapConfigs'
-import '../../node_modules/openlayers/css/ol.css'
-import '../styles/Map.css'
 
 class Map extends Component {
 

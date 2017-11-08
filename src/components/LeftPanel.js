@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Modal, Checkbox } from 'react-bootstrap'
-import '../../node_modules/bootstrap/dist/css/bootstrap.css'
-import '../styles/App.css'
 
 class LeftPanel extends Component {
 
@@ -20,7 +18,8 @@ class LeftPanel extends Component {
           <Modal.Title>Control</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Checkbox checked={this.props.isCountryBoundaryVisible} onChange={(event) => this.props.toggleCountryBoundary(event.target.checked)}>
+          <Checkbox checked={this.props.isCountryBoundaryVisible}
+                    onChange={(event) => this.props.toggleCountryBoundary(event.target.checked)}>
             Country Boundary
           </Checkbox>
         </Modal.Body>
