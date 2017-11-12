@@ -24,20 +24,20 @@ const setup = () => {
 };
 
 describe('TopMenuBar', () => {
-  it('should render TopMenuBar', () => {
+  it('should render a navigation bar with 3 buttons', () => {
     const { component } = setup(true);
     expect(toJson(component)).toMatchSnapshot();
     expect(component.find('NavItem').length).toBe(3);
   });
 
-  it('should toggle left panel on filter click', () => {
+  it('should toggle left panel when filter control is clicked', () => {
     const { component, actions } = setup();
     const button = component.find('NavItem').findWhere(item => item.prop('eventKey') === 2);
     button.simulate('click');
     expect(actions.toggleLeftPanelDisplay).toBeCalled();
   });
 
-  it('should display about popup on about click', () => {
+  it('should display about popup when about is clicked', () => {
     const { component, actions } = setup();
     const button = component.find('NavItem').findWhere(item => item.prop('eventKey') === 3);
     button.simulate('click');

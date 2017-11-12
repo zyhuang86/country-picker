@@ -29,7 +29,7 @@ describe('Map', () => {
     jest.clearAllMocks();
   });
 
-  it('should display map and create boundary', () => {
+  it('should display map and create map layers', () => {
     const handleCountryNameClickEventSpy = jest.spyOn(Map.prototype, 'handleCountryNameClickEvent');
     const createPopupOverlaySpy = jest.spyOn(Map.prototype, 'createPopupOverlay');
     const createCountryBoundaryOverlaySpy = jest.spyOn(Map.prototype, 'createCountryBoundaryOverlay');

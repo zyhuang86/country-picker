@@ -23,13 +23,13 @@ const setup = (show=false, isCountryBoundaryVisible=false) => {
 };
 
 describe('Left Panel', () => {
-  it('should display left panel on toggle', () => {
+  it('should display left panel when show is true', () => {
     const { component } = setup(true);
     expect(toJson(component)).toMatchSnapshot();
     expect(component.prop('backdrop')).toEqual(false);
   });
 
-  it('should hide left panel on toggle', () => {
+  it('should hide left panel when show is false', () => {
     const { component } = setup();
     expect(toJson(component)).toMatchSnapshot();
     expect(component.prop('show')).toEqual(false);

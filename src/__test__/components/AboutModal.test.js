@@ -3,7 +3,7 @@ import '../setupTest'
 import AboutModal from '../../components/AboutModal'
 
 describe('About Modal', () => {
-  it('should display modal', () => {
+  it('should display modal when show is true', () => {
     const component = shallow(
       <AboutModal show={ true } onHide={ jest.fn() } />
     );
@@ -12,7 +12,7 @@ describe('About Modal', () => {
     expect(component.find('ModalHeader').prop('closeButton')).toEqual(true);
   });
 
-  it('should hide modal', () => {
+  it('should hide modal when show is false', () => {
     const component = render(
         <AboutModal show={ false } onHide={ jest.fn() } />
     );

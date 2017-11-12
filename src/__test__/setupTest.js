@@ -9,7 +9,7 @@ Enzyme.configure({ adapter: new Adapter() });
 // Make Enzyme functions available in all __test__ files without importing
 global.shallow = shallow;
 global.mount = mount;
-global.render = render;
+global.render = mount;
 global.toJson = toJson;
 
 // Fail tests on any warning

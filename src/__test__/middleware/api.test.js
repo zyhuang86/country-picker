@@ -34,9 +34,9 @@ describe('middleware api', () => {
     return store.dispatch(fetchCountryData(coordinates)).then(() => {
       expect(store.getActions()).toEqual([expectedAction])
     })
-  })
+  });
 
-  it("should be able to handle fetchCountryData API error call", () => {
+  it("should be able to handle fetchCountryData API errors", () => {
     const store = mockStore({});
     const apiData = {
       status: 400,

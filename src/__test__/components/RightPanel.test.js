@@ -23,13 +23,13 @@ const setup = (show=false, countryData={}, coordinates=[0,0]) => {
 };
 
 describe('Right Panel', () => {
-  it('should display right panel on toggle', () => {
+  it('should display right panel when show is true', () => {
     const { component } = setup(true);
     expect(toJson(component)).toMatchSnapshot();
     expect(component.prop('backdrop')).toEqual(false);
   });
 
-  it('should hide right panel on toggle', () => {
+  it('should hide right panel when show is false', () => {
     const { component } = setup();
     expect(toJson(component)).toMatchSnapshot();
     expect(component.prop('show')).toEqual(false);
