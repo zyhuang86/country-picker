@@ -38,7 +38,7 @@ class RightPanel extends Component {
         </Modal.Header>
         <Modal.Body className="modal-right-panel-full-height">
           <iframe src={ wikiLink } className="iframe-body" title="wiki_page"/>
-          <Label className="modal-right-panel-title-coordinates">Coordinates:&nbsp;&nbsp; ({coordinates[0].toFixed(2)},{coordinates[1].toFixed(2)})</Label>
+          <Label className="modal-right-panel-title-coordinates"><span>Coordinates:&nbsp;&nbsp; ({coordinates[0].toFixed(2)},{coordinates[1].toFixed(2)})</span></Label>
         </Modal.Body>
       </Modal>
     )

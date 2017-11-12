@@ -99,11 +99,13 @@ class Map extends Component {
       }
     }));
 
-    closer.onclick = function() {
-      popupLayer.setPosition(undefined);
-      closer.blur();
-      return false;
-    };
+    if(closer) {
+      closer.onclick = function () {
+        popupLayer.setPosition(undefined);
+        closer.blur();
+        return false;
+      };
+    }
     return popupLayer;
   }
 
@@ -118,11 +120,11 @@ class Map extends Component {
   handleMapMouseOverEvent(map, highlightedOverlay) {
     const displayHighlightedCountry = this.handleCountryHighlight;
     let highlight;
-    map.on('pointermove', function(evt) {
-      if (evt.dragging) {
+    map.on('pointermove', function(event) {
+      if (event.dragging) {
         return;
       }
-      const pixel = map.getEventPixel(evt.originalEvent);
+      const pixel = map.getEventPixel(event.originalEvent);
       highlight = displayHighlightedCountry(pixel, highlightedOverlay, highlight, this);
     });
   }

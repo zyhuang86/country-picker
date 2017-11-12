@@ -5,7 +5,7 @@ import AboutModal from '../../components/AboutModal'
 describe('About Modal', () => {
   it('should display modal', () => {
     const component = shallow(
-        <AboutModal show={ true } onHide={ jest.fn() } />
+      <AboutModal show={ true } onHide={ jest.fn() } />
     );
     expect(toJson(component)).toMatchSnapshot();
     expect(component.prop('show')).toEqual(true);

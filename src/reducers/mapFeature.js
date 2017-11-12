@@ -28,7 +28,7 @@ const popoutPanel = (state = initialState, action) => {
     case ActionType.TOGGLE_COUNTRY_BOUNDARY:
       return {
         ...state,
-        isCountryBoundaryVisible: action.isCountryBoundaryVisible
+        isCountryBoundaryVisible: action.payload
       };
     default:
       return state

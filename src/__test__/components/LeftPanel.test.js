@@ -9,11 +9,11 @@ const setup = (show=false, isCountryBoundaryVisible=false) => {
   };
 
   const component = shallow(
-      <LeftPanel show={show}
-                 isCountryBoundaryVisible={isCountryBoundaryVisible}
-                 onHide={actions.onHide}
-                 toggleCountryBoundary={actions.toggleCountryBoundary}
-      />
+    <LeftPanel show={show}
+               isCountryBoundaryVisible={isCountryBoundaryVisible}
+               onHide={actions.onHide}
+               toggleCountryBoundary={actions.toggleCountryBoundary}
+    />
   );
 
   return {
@@ -23,13 +23,13 @@ const setup = (show=false, isCountryBoundaryVisible=false) => {
 };
 
 describe('Left Panel', () => {
-  it('should display modal', () => {
+  it('should display left panel on toggle', () => {
     const { component } = setup(true);
     expect(toJson(component)).toMatchSnapshot();
     expect(component.prop('backdrop')).toEqual(false);
   });
 
-  it('should hide modal', () => {
+  it('should hide left panel on toggle', () => {
     const { component } = setup();
     expect(toJson(component)).toMatchSnapshot();
     expect(component.prop('show')).toEqual(false);

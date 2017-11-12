@@ -19,5 +19,5 @@ export const receiveCoordinates = (coordinates) => ({
 
 export const toggleCountryBoundary = (isCountryBoundaryVisible) => ({
   type: ActionType.TOGGLE_COUNTRY_BOUNDARY,
-  isCountryBoundaryVisible: isCountryBoundaryVisible
+  payload: isCountryBoundaryVisible
 });

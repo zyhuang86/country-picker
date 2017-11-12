@@ -18,9 +18,17 @@ export const fetchCountryData = (coordinates) => {
   const url = getUrl(coordinates[0], coordinates[1], USERNAME);
 
   return dispatch => fetch(url)
-    .then(res => res.json())
+    .then(response => {
+      const data = response.json();
+      if (response.ok) {
+        return Promise.resolve(data);
+      } else {
+        return Promise.reject();
+      }
+    })
     .then(
-      data => dispatch({ type: RECEIVE_COUNTRY_DATA, payload: data }),
+      data => dispatch({ type: RECEIVE_COUNTRY_DATA, payload: data })
+    ).catch(
       err => dispatch({ type: RECEIVE_COUNTRY_DATA_ERROR })
     );
 };
