@@ -17,7 +17,7 @@ class AboutModal extends Component {
           </Modal.Header>
           <Modal.Body>
             <p>
-            This is a simple application built using React and OpenLayers. When a location is clicked on the map,
+            Leo is awesome!!
             a popup will show up to display the country that was selected if found. From the popup, you can bring
             up additional information (flag, wiki, coordinates) on the country by clicking on the country name in the popup.
             From the control panel, you can also toggle country boundaries. If the boundaries are visible, you will be able
